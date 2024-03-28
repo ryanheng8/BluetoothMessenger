@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.DrawingBoardFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Edit Drawing"
+        android:textSize="32sp"/>
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:text="Home"
+        android:layout_marginStart="326dp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:text="Save"
+        android:layout_marginStart="326dp"
+        android:layout_marginTop="60dp"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:text="Delete"
+        android:textSize="11dp"
+        android:layout_marginStart="326dp"
+        android:layout_marginTop="120dp"/>
+
+    <Button
+        android:id="@+id/loadButton"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:text="Load"
+        android:layout_marginStart="326dp"
+        android:layout_marginTop="180dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="48dp">
+
+        <com.example.chatroom.ui.DrawingBoardView
+            android:id ="@+id/drawingBoardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="324dp"
+        android:layout_marginTop="408dp"
+        android:background="@android:color/black" >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="316dp"
+            android:layout_margin="4dp"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Line Thickness:"
+                android:textSize="28sp"/>
+
+            <com.google.android.material.slider.Slider
+                android:id ="@+id/thicknessSlider"
+                android:stepSize="0.1"
+                android:value = "20.0"
+                android:valueFrom="0.0"
+                android:valueTo="40.0"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Color:"
+                android:textSize="28sp"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id ="@+id/colorBlack"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="@color/black"
+                    android:layout_margin="10dp"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+                <FrameLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_margin="10dp"
+                    android:backgroundTint="@color/black"
+                    android:background="@color/black"
+                    android:padding="5dp">
+                    <Button
+                        android:id ="@+id/colorWhite"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:backgroundTint="@color/white"/>
+                </FrameLayout>
+
+                <Button
+                    android:id ="@+id/colorRed"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="@color/red"
+                    android:layout_margin="10dp"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+                <Button
+                    android:id ="@+id/colorOrange"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="@color/orange"
+                    android:layout_margin="10dp"
+                    style="?android:attr/buttonBarButtonStyle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id ="@+id/colorYellow"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="@color/yellow"
+                    android:layout_margin="10dp"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+                <Button
+                    android:id ="@+id/colorGreen"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="@color/green"
+                    android:layout_margin="10dp"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+                <Button
+                    android:id ="@+id/colorBlue"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="@color/blue"
+                    android:layout_margin="10dp"
+                    style="?android:attr/buttonBarButtonStyle" />
+
+                <Button
+                    android:id ="@+id/colorPurple"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:backgroundTint="@color/purple"
+                    android:layout_margin="10dp"
+                    style="?android:attr/buttonBarButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

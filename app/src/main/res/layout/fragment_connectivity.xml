@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.LoginFragment">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginBottom="250dp"
+        android:text="Connectivity"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:text="Home"
+        android:textSize="20dp"
+        android:layout_marginStart="300dp"/>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/discoverabilityHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discoverability:"
+            android:textSize="30sp" />
+
+        <Switch
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleX="3"
+            android:scaleY="3"
+            android:textOn="On"
+            android:textOff="Off"/>
+
+        <Button
+            android:id="@+id/findDevicesButton"
+            android:layout_width="240dp"
+            android:layout_height="120dp"
+            android:text="FIND DEVICES"
+            android:textSize="40dp"/>
+
+        <TextView
+            android:id="@+id/foundDevicesHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Found Devices:"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/foundDevicesContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Joe's Galaxy"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/connectButton"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="24dp"
+                android:text="Connect"
+                android:textSize="24dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
